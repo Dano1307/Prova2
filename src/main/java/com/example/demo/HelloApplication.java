@@ -14,12 +14,13 @@ public class HelloApplication extends Application {
             System.out.println("Doing stuffs...");
         }
 
-
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("hello-view.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 320, 240);
-        stage.setTitle("Hello!");
+        stage.setTitle("Hello world");
         stage.setScene(scene);
         stage.show();
+
+        System.out.println("Doing other stuffs...");
     }
 
     public static void main(String[] args) {
